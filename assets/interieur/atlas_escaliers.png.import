@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c8sdawqmgpg1k"
-path="res://.godot/imported/chambre_et_labo.png-3df273c7e07d20cfac5199ba3bf0c4a2.ctex"
+uid="uid://cvsrncb8vsg2p"
+path="res://.godot/imported/atlas_escaliers.png-e4d3fec8a2ae7470df2f7d6bcd1fc1f0.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/chambre/chambre_et_labo.png"
-dest_files=["res://.godot/imported/chambre_et_labo.png-3df273c7e07d20cfac5199ba3bf0c4a2.ctex"]
+source_file="res://assets/interieur/atlas_escaliers.png"
+dest_files=["res://.godot/imported/atlas_escaliers.png-e4d3fec8a2ae7470df2f7d6bcd1fc1f0.ctex"]
 
 [params]
 
