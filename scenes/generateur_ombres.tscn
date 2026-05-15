@@ -1,0 +1,193 @@
+[gd_scene format=3 uid="uid://djexv7vtiobvb"]
+
+[ext_resource type="Script" uid="uid://my1cmp7u0kld" path="res://scripts/export_ombres.gd" id="1_6etnw"]
+
+[node name="GenerateurOmbres" type="Node2D" unique_id=1687843887]
+modulate = Color(1, 1, 1, 0.3)
+script = ExtResource("1_6etnw")
+
+[node name="SubViewportContainer" type="SubViewportContainer" parent="." unique_id=1697690279]
+offset_right = 80.0
+offset_bottom = 112.0
+stretch = true
+
+[node name="SubViewport" type="SubViewport" parent="SubViewportContainer" unique_id=566320304]
+transparent_bg = true
+handle_input_locally = false
+size = Vector2i(80, 112)
+render_target_update_mode = 4
+
+[node name="Node2D" type="Node2D" parent="SubViewportContainer/SubViewport" unique_id=607409051]
+
+[node name="Polygon2D" type="Polygon2D" parent="SubViewportContainer/SubViewport/Node2D" unique_id=327353862]
+modulate = Color(1, 1, 1, 0.3)
+position = Vector2(32, 0)
+color = Color(0.1428257, 0, 0, 1)
+polygon = PackedVector2Array(0, 0, 16, 0, 16, 16)
+
+[node name="Polygon2D16" type="Polygon2D" parent="SubViewportContainer/SubViewport/Node2D" unique_id=1325767675]
+modulate = Color(1, 1, 1, 0.3)
+position = Vector2(32, 32)
+color = Color(0.1428257, 0, 0, 1)
+polygon = PackedVector2Array(8, 0, 16, 0, 16, 16)
+
+[node name="Polygon2D12" type="Polygon2D" parent="SubViewportContainer/SubViewport/Node2D" unique_id=1659862971]
+modulate = Color(1, 1, 1, 0.3)
+position = Vector2(32, 16)
+color = Color(0.1428257, 0, 0, 1)
+polygon = PackedVector2Array(0, 0, 16, 0, 16, 8)
+
+[node name="Polygon2D4" type="Polygon2D" parent="SubViewportContainer/SubViewport/Node2D" unique_id=2049433031]
+modulate = Color(1, 1, 1, 0.3)
+position = Vector2(48, 0)
+color = Color(0.1428257, 0, 0, 1)
+polygon = PackedVector2Array(16, 0, 0, 16, 16, 16)
+
+[node name="Polygon2D17" type="Polygon2D" parent="SubViewportContainer/SubViewport/Node2D" unique_id=318512143]
+modulate = Color(1, 1, 1, 0.3)
+position = Vector2(48, 32)
+color = Color(0.1428257, 0, 0, 1)
+polygon = PackedVector2Array(16, 0, 8, 16, 16, 16)
+
+[node name="Polygon2D13" type="Polygon2D" parent="SubViewportContainer/SubViewport/Node2D" unique_id=131367887]
+modulate = Color(1, 1, 1, 0.3)
+position = Vector2(48, 16)
+color = Color(0.1428257, 0, 0, 1)
+polygon = PackedVector2Array(16, 8, 0, 16, 16, 16)
+
+[node name="Polygon2D5" type="Polygon2D" parent="SubViewportContainer/SubViewport/Node2D" unique_id=1809338412]
+modulate = Color(1, 1, 1, 0.3)
+position = Vector2(0, 48)
+color = Color(0.1428257, 0, 0, 1)
+polygon = PackedVector2Array(16, 8, 0, 8, 0, 16, 16, 16)
+
+[node name="Polygon2D18" type="Polygon2D" parent="SubViewportContainer/SubViewport/Node2D" unique_id=1436241541]
+modulate = Color(1, 1, 1, 0.3)
+position = Vector2(0, 64)
+color = Color(0.1428257, 0, 0, 1)
+polygon = PackedVector2Array(16, 8, 16, 0, 8, 0, 8, 8, 0, 8, 0, 16, 16, 16)
+
+[node name="Polygon2D22" type="Polygon2D" parent="SubViewportContainer/SubViewport/Node2D" unique_id=945536055]
+modulate = Color(1, 1, 1, 0.3)
+position = Vector2(0, 96)
+color = Color(0.1428257, 0, 0, 1)
+polygon = PackedVector2Array(16, 8, 16, 0, 8, 0, 0, 0, 0, 0, 8, 8, 16, 8)
+
+[node name="Polygon2D29" type="Polygon2D" parent="SubViewportContainer/SubViewport/Node2D" unique_id=584756078]
+modulate = Color(1, 1, 1, 0.3)
+position = Vector2(40, 104)
+color = Color(0.1428257, 0, 0, 1)
+polygon = PackedVector2Array(16, 8, 16, 8, 8, 0, 0, 0, 0, 0, 0, 8, 8, 8, 16, 8)
+
+[node name="Polygon2D28" type="Polygon2D" parent="SubViewportContainer/SubViewport/Node2D" unique_id=1602568196]
+modulate = Color(1, 1, 1, 0.3)
+position = Vector2(24, 104)
+color = Color(0.1428257, 0, 0, 1)
+polygon = PackedVector2Array(16, 8, 16, -8, 8, -8, 8, 0, 8, 0, 16, 8, 16, 8)
+
+[node name="Polygon2D27" type="Polygon2D" parent="SubViewportContainer/SubViewport/Node2D" unique_id=1493917169]
+modulate = Color(1, 1, 1, 0.3)
+position = Vector2(16, 96)
+color = Color(0.1428257, 0, 0, 1)
+polygon = PackedVector2Array(8, 16, 0, 16, 0, 8, 0, 0, 0, 0, 8, 8, 8, 8)
+
+[node name="Polygon2D23" type="Polygon2D" parent="SubViewportContainer/SubViewport/Node2D" unique_id=1966907334]
+modulate = Color(1, 1, 1, 0.3)
+position = Vector2(16, 80)
+color = Color(0.1428257, 0, 0, 1)
+polygon = PackedVector2Array(8, 8, 8, 16, 8, 8, 8, 8, 0, 8, 0, 16, 8, 16)
+
+[node name="Polygon2D25" type="Polygon2D" parent="SubViewportContainer/SubViewport/Node2D" unique_id=1483968109]
+modulate = Color(1, 1, 1, 0.3)
+position = Vector2(40, 80)
+color = Color(0.1428257, 0, 0, 1)
+polygon = PackedVector2Array(8, 8, 8, 16, 8, 8, 8, 8, 0, 8, 0, 16, 8, 16)
+
+[node name="Polygon2D26" type="Polygon2D" parent="SubViewportContainer/SubViewport/Node2D" unique_id=1925567010]
+modulate = Color(1, 1, 1, 0.3)
+position = Vector2(56, 72)
+color = Color(0.1428257, 0, 0, 1)
+polygon = PackedVector2Array(8, 8, 8, 16, 8, 8, 8, 8, 0, 8, 0, 16, 8, 16)
+
+[node name="Polygon2D24" type="Polygon2D" parent="SubViewportContainer/SubViewport/Node2D" unique_id=1855879056]
+modulate = Color(1, 1, 1, 0.3)
+position = Vector2(0, 72)
+color = Color(0.1428257, 0, 0, 1)
+polygon = PackedVector2Array(8, 8, 8, 16, 8, 8, 8, 8, 0, 8, 0, 16, 8, 16)
+
+[node name="Polygon2D19" type="Polygon2D" parent="SubViewportContainer/SubViewport/Node2D" unique_id=1713598299]
+modulate = Color(1, 1, 1, 0.3)
+position = Vector2(16, 64)
+color = Color(0.1428257, 0, 0, 1)
+polygon = PackedVector2Array(16, 8, 16, 0, 8, 0, 0, 0, 0, 8, 0, 16, 8, 16, 8, 8)
+
+[node name="Polygon2D20" type="Polygon2D" parent="SubViewportContainer/SubViewport/Node2D" unique_id=2094869771]
+modulate = Color(1, 1, 1, 0.3)
+position = Vector2(32, 64)
+color = Color(0.1428257, 0, 0, 1)
+polygon = PackedVector2Array(16, 8, 16, 0, 8, 0, 0, 0, 0, 8, 8, 8, 8, 16, 16, 16)
+
+[node name="Polygon2D21" type="Polygon2D" parent="SubViewportContainer/SubViewport/Node2D" unique_id=1033552233]
+modulate = Color(1, 1, 1, 0.3)
+position = Vector2(48, 64)
+color = Color(0.1428257, 0, 0, 1)
+polygon = PackedVector2Array(16, 8, 8, 8, 8, 0, 0, 0, 0, 8, 0, 16, 8, 16, 16, 16)
+
+[node name="Polygon2D7" type="Polygon2D" parent="SubViewportContainer/SubViewport/Node2D" unique_id=1574885554]
+modulate = Color(1, 1, 1, 0.3)
+position = Vector2(32, 48)
+color = Color(0.1428257, 0, 0, 1)
+polygon = PackedVector2Array(8, 16, 8, 0, 0, 0, 0, 16)
+
+[node name="Polygon2D8" type="Polygon2D" parent="SubViewportContainer/SubViewport/Node2D" unique_id=1909982348]
+modulate = Color(1, 1, 1, 0.3)
+position = Vector2(16, 48)
+color = Color(0.1428257, 0, 0, 1)
+polygon = PackedVector2Array(16, 8, 0, 8, 0, 0, 16, 0)
+
+[node name="Polygon2D9" type="Polygon2D" parent="SubViewportContainer/SubViewport/Node2D" unique_id=1238844180]
+modulate = Color(1, 1, 1, 0.3)
+position = Vector2(48, 48)
+color = Color(0.1428257, 0, 0, 1)
+polygon = PackedVector2Array(16, 16, 16, 0, 8, 0, 8, 16)
+
+[node name="Polygon2D2" type="Polygon2D" parent="SubViewportContainer/SubViewport/Node2D" unique_id=1397746376]
+modulate = Color(1, 1, 1, 0.3)
+position = Vector2(16, 0)
+color = Color(0.1428257, 0, 0, 1)
+polygon = PackedVector2Array(0, 0, 16, 0, 0, 16)
+
+[node name="Polygon2D15" type="Polygon2D" parent="SubViewportContainer/SubViewport/Node2D" unique_id=1214942913]
+modulate = Color(1, 1, 1, 0.3)
+position = Vector2(16, 32)
+color = Color(0.1428257, 0, 0, 1)
+polygon = PackedVector2Array(0, 0, 8, 0, 0, 16)
+
+[node name="Polygon2D11" type="Polygon2D" parent="SubViewportContainer/SubViewport/Node2D" unique_id=1618612338]
+modulate = Color(1, 1, 1, 0.3)
+position = Vector2(16, 16)
+color = Color(0.1428257, 0, 0, 1)
+polygon = PackedVector2Array(0, 0, 16, 0, 0, 8)
+
+[node name="Polygon2D3" type="Polygon2D" parent="SubViewportContainer/SubViewport/Node2D" unique_id=1152857202]
+modulate = Color(1, 1, 1, 0.3)
+color = Color(0.1428257, 0, 0, 1)
+polygon = PackedVector2Array(0, 0, 0, 16, 16, 16)
+
+[node name="Polygon2D14" type="Polygon2D" parent="SubViewportContainer/SubViewport/Node2D" unique_id=858423694]
+modulate = Color(1, 1, 1, 0.3)
+position = Vector2(0, 32)
+color = Color(0.1428257, 0, 0, 1)
+polygon = PackedVector2Array(0, 0, 0, 16, 8, 16)
+
+[node name="Polygon2D10" type="Polygon2D" parent="SubViewportContainer/SubViewport/Node2D" unique_id=1593002997]
+modulate = Color(1, 1, 1, 0.3)
+position = Vector2(0, 16)
+color = Color(0.1428257, 0, 0, 1)
+polygon = PackedVector2Array(0, 8, 0, 16, 16, 16)
+
+[node name="Polygon2D6" type="Polygon2D" parent="SubViewportContainer/SubViewport/Node2D" unique_id=1253629751]
+modulate = Color(1, 1, 1, 0.3)
+position = Vector2(64, 0)
+color = Color(0.1428257, 0, 0, 1)
+polygon = PackedVector2Array(0, 0, 0, 16, 16, 16, 16, 0)
