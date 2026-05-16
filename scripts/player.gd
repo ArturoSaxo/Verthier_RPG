@@ -18,3 +18,16 @@ func _physics_process(_delta: float) -> void:
 	# 3. move_and_slide utilise la propriété 'velocity' pour déplacer le corps
 	# Il gère les collisions et le glissement contre les murs sans besoin de gravité
 	move_and_slide()
+	
+func _ready():
+	# Si un point d'apparition est demandé
+	if Global.target_spawn_id != "":
+		# On cherche un nœud Marker2D qui porte ce nom dans la scène actuelle
+		var spawn_point = get_node_to_spawn(Global.target_spawn_id)
+		if spawn_point:
+			global_position = spawn_point.global_position
+		Global.target_spawn_id = "" # On réinitialise
+
+func get_node_to_spawn(id: String):
+	# Cherche récursivement un Marker2D avec le bon nom dans la scène
+	return get_tree().current_scene.find_child(id, true, false)

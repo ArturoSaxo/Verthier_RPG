@@ -1,9 +1,11 @@
 [gd_scene format=4 uid="uid://b3h180g7dn1xf"]
 
+[ext_resource type="PackedScene" uid="uid://ccq1wpqnxn6rg" path="res://scenes/joueur.tscn" id="1_6wyqm"]
 [ext_resource type="Texture2D" uid="uid://c8sdawqmgpg1k" path="res://assets/interieur/atlas_chambre.png" id="2_6wyqm"]
 [ext_resource type="Texture2D" uid="uid://dsvt3q8ptcriw" path="res://assets/mur_noir.png" id="3_677gf"]
 [ext_resource type="Texture2D" uid="uid://ode6idlb6pkn" path="res://assets/atlas_ombres.png" id="4_fxni2"]
 [ext_resource type="Texture2D" uid="uid://cfw13e37l8jcw" path="res://assets/interieur/atlas_chambre_detoure.png" id="5_c6g3k"]
+[ext_resource type="Script" uid="uid://cxo02r77dtq6q" path="res://scripts/declencheur_rdc_vers_etage.gd" id="5_q625y"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_4wyf3"]
 texture = ExtResource("2_6wyqm")
@@ -6961,8 +6963,13 @@ texture = ExtResource("5_c6g3k")
 [sub_resource type="TileSet" id="TileSet_f8qvi"]
 sources/0 = SubResource("TileSetAtlasSource_r8wc0")
 
-[node name="World" type="Node2D" unique_id=1161037811]
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_8hle4"]
+size = Vector2(23, 6)
+
+[node name="Maison_Arthur_RDC" type="Node2D" unique_id=1161037811]
 y_sort_enabled = true
+
+[node name="Player" parent="." unique_id=114215601 instance=ExtResource("1_6wyqm")]
 
 [node name="Parquet" type="TileMapLayer" parent="." unique_id=1308351810]
 z_index = -1
@@ -6992,3 +6999,14 @@ tile_set = SubResource("TileSet_ko8wc")
 [node name="Tapis" type="TileMapLayer" parent="." unique_id=274341925]
 tile_map_data = PackedByteArray("AAARAA0AAAARAAYAAAASAA0AAAASAAYAAAAUAA0AAAARAAYAAAAVAA0AAAASAAYAAAA=")
 tile_set = SubResource("TileSet_f8qvi")
+
+[node name="Spawn_Depuis_Etage" type="Marker2D" parent="." unique_id=253127242]
+position = Vector2(336, 206)
+
+[node name="Declencheur_Vers_Etage" type="Area2D" parent="." unique_id=1279506895]
+script = ExtResource("5_q625y")
+scene_destination = "uid://7pwuqgqu8l81"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Declencheur_Vers_Etage" unique_id=386259868]
+position = Vector2(336, 218)
+shape = SubResource("RectangleShape2D_8hle4")
